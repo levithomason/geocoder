@@ -1,0 +1,41 @@
+{
+  "name": "geocoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "geocode": "GOOGLE_MAPS_GEOCODING_API_KEY=AIzaSyBNpiELaBQl6qp6afYTxFo7NcCobxqSVsM node index.js",
+    "start": "node index.js",
+    "lint": "standard --fix | snazzy",
+    "test": "mocha --recursive",
+    "test:watch": "nodemon --exec \"npm run test --silent || true\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-as-promised": "^7.0.0",
+    "dirty-chai": "^2.0.0",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "sinon": "^2.3.6",
+    "sinon-chai": "^2.11.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    },
+    "globals": [
+      "expect",
+      "sandbox"
+    ]
+  }
+}
